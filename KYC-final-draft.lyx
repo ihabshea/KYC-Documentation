@@ -1,0 +1,5793 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\begin_preamble
+\usepackage{epigraph}
+\end_preamble
+\options final
+\use_default_options false
+\begin_modules
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics dvialw
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\backgroundcolor #eeeeec
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\rightmargin 3.5cm
+\secnumdepth 1
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size larger
+KYC
+\begin_inset Newline newline
+\end_inset
+
+
+\series medium
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\backslash
+small {A Car Expert System} 
+\backslash
+
+\backslash
+ 
+\backslash
+smallest {Version 3.2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+
+\size normal
+Abdelrahman Kamal
+\end_layout
+
+\begin_layout Author Email
+
+56307
+\end_layout
+
+\begin_layout Author
+Esraa Hisham
+\end_layout
+
+\begin_layout Author Email
+
+56355
+\end_layout
+
+\begin_layout Author
+Islam Gamal
+\end_layout
+
+\begin_layout Author Email
+
+56475
+\end_layout
+
+\begin_layout Author
+Ihab Essam
+\end_layout
+
+\begin_layout Author Email
+
+62352
+\end_layout
+
+\begin_layout Author
+Radwa Atef
+\end_layout
+
+\begin_layout Author Email
+
+56608
+\end_layout
+
+\begin_layout Author
+Rana Essam
+\end_layout
+
+\begin_layout Author Email
+
+56355
+\end_layout
+
+\begin_layout Abstract
+An expert system resembles the embodiment of knowledge within a computer
+ based on knowledge harvested factually, heuristically and/or through the
+ experience of one or more human experts in a given domain, in such a form
+ that an application could offer intelligent advice or take an appropriately
+ intelligent decision.
+ An expert system is especially powerful, given that it has the capability
+ to justify its own line of reasoning, explaining why and how certain conclusion
+s whether final or intermediate were generated in a way that is directly
+ intelligible to the concerned inquirer, be it an expert, someone who's
+ learning or any concerned appllication user.
+\end_layout
+
+\begin_layout Abstract
+Our proposed expert system could be a luxury option for people who like
+ a good ride, a sincere help for those not able to do the normal routine,
+ i.e: go to a car shop and talk to an actual car sales person, for reasons
+ like shortage of time, or for newbie car sales persons who need 
+\begin_inset Quotes eld
+\end_inset
+
+automated
+\begin_inset Quotes erd
+\end_inset
+
+ expert help.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size larger
+Glossary
+\end_layout
+
+\begin_layout Paragraph
+
+\size larger
+Expert System
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+A system which uses rules, concepts, cases or otherwise to 
+\begin_inset Quotes eld
+\end_inset
+
+reason
+\begin_inset Quotes erd
+\end_inset
+
+ or solve problems presented by users.
+\end_layout
+
+\begin_layout Paragraph
+
+\size larger
+Knowledge Base
+\end_layout
+
+\begin_layout Definition
+
+\size larger
+A component that contains the relevant knowledge related to the specific
+ domain of the expert system.
+ In the case of a rule-based system, they are represented as if-then rules.
+\end_layout
+
+\begin_layout Paragraph
+
+\size larger
+Inference Engine
+\end_layout
+
+\begin_layout Definition
+
+\size larger
+A component that gives the expert system the ability to reason and manipulate
+ the domain knowledge stored in the knowledge base combined with information
+ given by the user to deduce the relevant information requested by the user.
+\end_layout
+
+\begin_layout Paragraph
+
+\size larger
+User Interface
+\end_layout
+
+\begin_layout Definition
+
+\size larger
+The outlet through which the users targeted by the expert system can interact
+ and provide relevant information that the inference engine uses to provide
+ the user with solutions or otherwise information required by the user.
+\end_layout
+
+\begin_layout Paragraph
+
+\size larger
+Salience
+\end_layout
+
+\begin_layout Definition
+
+\size larger
+Generally the importance of a rule.
+ Rules with higher salience are executed first in case of a conflict.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size larger
+Introduction
+\end_layout
+
+\begin_layout Subsection
+
+\size larger
+Motivation
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+epigraph{The great lesson from the 1970s was that intelligent behavior depended
+ very much on dealing with knowledge, sometimes quite detailed knowledge,
+ of a domain where a given task lay.}{
+\backslash
+textit{ Pamela McCorduck}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Expert systems had been a great impact on the beginnings of the field of
+ artificial intelligence ever since the first expert system was created
+ in the 1970s.
+ They had been considered by many one of the very few truly successful artificia
+l intelligence software.
+ They have also been purposed to increase society's interest in AI and raise
+ its expectations about what AI can do, even though they are now thought
+ of as rather not very advanced form of AI.
+ Intellectually, expert systems have raised a number of questions such as
+ those concerning the nature of human expert reasoning, knowledge representation
+, causality, time, explanation, and reasoning under uncertainty.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Our presented, and still proposed as it is still expected to be further
+ developed, expert system is an experiment that enriched our minds by the
+ vast knowledge accumulated over the years by AI researchers who have worked
+ hard on expert system research and development ever since the seventies,
+ and the AI boom in the 80s, which was clearly similar to the Dot-com bubble
+ of the late nineties and early 2000s.
+ Our system is both inspired by knowledge derived 
+\begin_inset Quotes eld
+\end_inset
+
+factually
+\begin_inset Quotes erd
+\end_inset
+
+ from articles that had been the work of both journalists and researchers
+ mentioned in the references section and the deductions made by an effort
+ of our team members.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The system addresses a specific domain, rather than a general one due to
+ a common problem dubbed the 
+\begin_inset Quotes eld
+\end_inset
+
+commonsense knowledge problem
+\begin_inset Quotes erd
+\end_inset
+
+, which is simply a type of knowledge that consists of facts about the everyday
+ life, i.e: knowledge that all human beings are expected to know.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\size larger
+Practical Overview of Production Rule Systems
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The system is developed around the basic idea of production rule systems.
+ In short: rule-based systems depict the knowledge in terms of IF, THEN,
+ ELSE statements.
+ A rule is composed of two straightforward parts; the precedent part which
+ includes facts either provided by the user or deduced by the system, usually
+ based on the information provided by the user i.e: assertions made by the
+ consequents of previously fired rules, and a consequent part, also known
+ as the action part, or the conclusions part, which its associated action
+ will occur given that the precedent part is met, i.e: the rules are fired.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Every rule built in the production rule system must be checked sequentially
+ to see if its conditions are met, as previously mentioned either by user
+ specification or assertions made by the system, and if so, the rule is
+ fired and its consequent part is used for the next rule in line, and so
+ on until no changes are made to the knowledge or until a goal is found.
+\begin_inset Newline newline
+\end_inset
+
+Advantages of the production rule system include the fact that rules can
+ be added, modified or even removed without affecting other rules, and it
+ is a straightforward and easy approach to build the knowledge base of the
+ expert system, but as good as the model is, it is still disadvantageous
+ in some aspects including the fact that the search efficiency reduces linearly
+ with the number of rules , since as mentioned before rules are checked
+ sequentially, which poses an interesting question: does order matter if
+ rules are independent?
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Another disadvantage that this very system suffers from is rule redundancy;
+ any system large enough will have some sort of rule redundancy since the
+ system should be able to meet all, or at least try to meet all of the user
+ requests.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size larger
+System Description
+\end_layout
+
+\begin_layout Subsection
+
+\size larger
+System Overview
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+A user interested in cars with not enough knowledge of the market, the different
+ brands..
+ etc, enters the website to get help to buy a car that perfectly suits their
+ financial level and lifestyle.
+ Users are given the freedom to either register as users to keep track of
+ their previous sessions or just try the system without registration.
+ Obviously, a user will probably not use the system every day, or even every
+ month, so keeping track of their previous expert system sessions is beneficial
+ so they would not lose much time if their enquiries have not changed much
+ than the previous time they have used the system.
+ Does that make sense? To put it into perspective, they could just click
+ on a button to do the same session once more.
+ Why? Because the system is supposed to have been more developed by then,
+ and it will probably have much more options to choose from, hence their
+ experience would improve dramatically.
+\end_layout
+
+\begin_layout Subsection*
+
+\size larger
+Ontology
+\end_layout
+
+\begin_layout Subsubsection*
+
+\size large
+Person
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Tabular
+<lyxtabular version="3" rows="56" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="10cm">
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Relationship_Status
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+What is your current relationship status?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Single, Married
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+No_of_Children
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+How many children do you have?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Zero, One, Two, More than two.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Age
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+How old are you?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Between 18-30, Between 30 and 45, Older than 45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Salary
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+How much do you earn a month?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Less than $1K, Between $1K and $2K, More than $2K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Budget
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+What is your budget?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Below $30K, Between $30K and $50K, More than $50K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Leather
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+What is your stand on leather seats?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Leather is fine, Leather-free
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Continent
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+Where do you live?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Africa and Middle East, Asia and Australia, Europe, North America and South
+ America
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Disability
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+Do you have any sort of a disability?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Yes, No.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Mileage
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+What is your mileage per month?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Less than 60 Miles, Between 60 and 120 Miles, More than 120 Miles.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Across-Country
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+Do you frequently travel accross the country?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Yes, No.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Camping
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+Do you like camping?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Yes, No.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Suburban
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+Do you live in the suburbs?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Yes, No.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Responsibility
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Prompt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Quotes eld
+\end_inset
+
+Are you responsible for any other human beings other than yourself?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Yes, No.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\size large
+CAR
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Car
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="10cm">
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Automotive_Class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Relation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Hatchback, Sedan, Hybrid, RV, Sports
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Relation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Mini, Mid-size, Full-sized
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+CC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Relation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Between 1K and 2K, Between 2K and 4K, More than 4K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Price_Range
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Relation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Below $30K, Between $30K and $50K, More than $50K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Automation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Nominal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+SV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Relation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+PV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Manual, Automatic
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size larger
+Rules
+\end_layout
+
+\begin_layout Standard
+[[Screenshot of rules in code]]
+\end_layout
+
+\begin_layout Subsubsection*
+
+\size large
+Prediction Rules
+\end_layout
+
+\begin_layout Standard
+What follows is only a subset of the rules implemented in the system.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+30-50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+30-50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = True.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+30-50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+>4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+>120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+>120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+>4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+>120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sport
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+>4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+>120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+>120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sports
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+>4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+18-30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Hatchback
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mini-car
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 2000 and 4000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+<1
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+<30
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = false.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+30-50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 30000 AND 50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+30-50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Mid-size
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 30000 AND 50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+1-2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+<60
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+>50000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+If Person.Married == false AND Person.Age == 
+\begin_inset Quotes eld
+\end_inset
+
+30-45
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Salary == 
+\begin_inset Quotes eld
+\end_inset
+
+>2
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Budget == 
+\begin_inset Quotes eld
+\end_inset
+
+>50
+\begin_inset Quotes erd
+\end_inset
+
+ AND Person.Mileage = 
+\begin_inset Quotes eld
+\end_inset
+
+60-120
+\begin_inset Quotes erd
+\end_inset
+
+ THEN Car.Automotive_Class = 
+\begin_inset Quotes eld
+\end_inset
+
+Sedan
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Size = 
+\begin_inset Quotes eld
+\end_inset
+
+Full-sized
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.CC = 
+\begin_inset Quotes eld
+\end_inset
+
+Between 1000 and 2000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Price = 
+\begin_inset Quotes eld
+\end_inset
+
+<30000
+\begin_inset Quotes erd
+\end_inset
+
+ AND Car.Automatic = true.
+\end_layout
+
+\begin_layout Subsection*
+
+\size larger
+Phase One: The First Session
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Whether the user chooses to go incognito or actually register as a user,
+ they go through a process involving two major steps: prediction and confirmatio
+n.
+ In either case, the user will have to answer questions specifically designed
+ to deduce what kind of car they would actually like to buy and later on
+ use in the future.
+ The questions are utilized as a tool to predict and later on confirm the
+ preferences of the user based on financial and personal questions answerd
+ by the user themself.
+ Some questions were based on research done in recent years as lifestyles
+ have progressed and changed, questions like whether the user opposes the
+ use of leather, i.e: prefers a 
+\begin_inset Quotes eld
+\end_inset
+
+vegan
+\begin_inset Quotes erd
+\end_inset
+
+ lifestyle is designed specifically to perfectly serve the user with answers
+ satisfying enough.
+ Other users are eco-friendly, hence the system should suggest an electric
+ car and so on.
+\end_layout
+
+\begin_layout Subsection*
+
+\size larger
+Phase Two: [PROPOSED] Buying The Car
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Once the first session is over and given that the results were satisfying
+ enough to the user, a proposed action would be to permit users to either
+ buy the car directly from sellers through the KYC system, or rather direct
+ them to links of suggested cars to buy them on their own discretion.
+\end_layout
+
+\begin_layout Subsection*
+
+\size larger
+Phase Three: Improving The First Session
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Suppose a user was not a hundred percent satisfied with the results provided
+ by the expert system in the first session, or in other cases the user had
+ actually enjoyed the experience and was satisfied with the suggestion provided
+ by the system and would like to buy a new car knowing the system would
+ improve after all the time they hadn't used it.
+ The proper action to take is to revisit the history of the sessions to
+ a) repeat the same session, b) alter the answers slightly to get more appropria
+te results, and get new results that had been improved with time, new improved
+ knowledge and data.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size larger
+System Components
+\end_layout
+
+\begin_layout Subsection
+
+\size larger
+Questions User Interface
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The questions user interface includes exactly twelve questions designed
+ to extract the relevant information needed by the inference engine to deduce
+ the car suitable for the user needs.
+ The questions interface is composed of questions, answers to pick from
+ in response to the questions, a progress bar to indicate how far the journey
+ had been going, an initial list of suggested cars and finally the car most
+ suitable based on the questions answered by the user.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+[[screenshots]]
+\end_layout
+
+\begin_layout Subsection
+
+\size larger
+History
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The history is designed to provide users with an insight to their answers
+ in previous sessions, and a chance to re-use or alter previous sessions
+ to get better and improved results.
+ The history interface is provided with a search feature, that is really
+ only necessary if the user had been using the system for too long.
+\end_layout
+
+\begin_layout Standard
+[[screenshots]]
+\end_layout
+
+\begin_layout Subsection*
+
+\size larger
+Developer Interface
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The developer interface provides an insight to the system; details about
+ the users, how many times they have used the website and their previous
+ sessions supplemented with statistics to better illustrate how the system
+ is used and how it is supposed to be used to help the developer(s) improve
+ the system as time goes.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size larger
+Inference Mechanism
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The inference mechanism used is obviously forward-chaining provided by the
+ light-weight reasoning tool 
+\begin_inset Quotes eld
+\end_inset
+
+Rule Reactor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The rule reactor tool is the perfect pairing to the KYC system since it
+ is designed to carry out the production rule system exactly as described
+ in the books.
+ An example from our system will further provide more insight into the tool.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+reactor.createRule("Rule-1", 0, {p: Person},
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+   	function(p){
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+       return p.answers.length == 5 && p.answers[0] == false 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+&& p.answers[1] == "18-30" 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+&& p.answers[2] == "<1" 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+&& p.answers[3] == "<30"
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+&& p.answers[4] == "<60"   
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+},   
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+function(p){ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+   Fiber(function() {
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+             carQuery =Cars.find({automotive_class: "Hatchback", car_size:
+ "Mini-car",
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+cc: {$gt: 999, $lt: 2001},
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+price: {$lt: 3000},
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+automatic: false},
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+{limit: 4});
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+       carQuery.forEach(function(car){ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+            cars.push(car);        
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+	});     
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+	}).run();
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+The first part is obviously the name of the rule, followed by a salience,
+ also known as priority, which is used to decide which rules will be used
+ in case a conflict arises, the higher the value, the more important the
+ rule.
+ After that comes the domain specification, which consists of the parts
+ mentioned above in the ontology subsection; the properties in this section
+ refer to the names of classes containing variables to be used by the inference
+ engine whether in the precedents or the consequences.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+After the domain specification comes the a condition or an array of conditions.
+ The first of which, in our system, is used to differ between the prediction
+ rules, which are used after only 5 questions, and the confirmation rules,
+ which are used obviously after all questions had been answered.
+ Finally, an action is provided, in this case it is a database query specifying
+ the properties of a car based on the answers of the user.
+ Note that Fiber is NodeJS's equivalent of a thread.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Then the rules are applied when an instruction reactor.assert(person) is
+ applied.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "1"
+
+\end_inset
+
+B.G.
+ Buchanan and E.H.
+ Shortliffe, Rule-Based Expert Systems: The MYCIN Experiments of the Stanford
+ Heuristic Programming Project 
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "2"
+
+\end_inset
+
+S.
+ Donal, EXPERT SYSTEMS: OVERVIEW OF FEATURES THEY PROVIDE
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+ K.
+ John, User Interfaces for Knowledge Based System Tools
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+A.
+ Anjewierden and J.
+ Wielemaker.
+ Shelley { Computer Aided Knowledge Engineering.
+ In Current Trends in Knowledge Acquisition, pages 41{59.
+ IOS Press, 1990.
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+M.
+ Eisenstadt, J.
+ Domingue, T.
+ Ra jan and E.
+ Motta.
+ Visual Knowledge Engineering.
+ IEEE Transactions on Software Engineering, 16(10), October 1990.
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+Why Millennials Are Buying Fewer Cars Than Older Generations, Forbes
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+Is Buying Cars Less Important To Millennials Than Past Generations? GenFKD
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+P.
+ Nick, Buying a Car: How Millennials Do It Differently
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+G.
+ Tanya, Millennials, Gen X Have Different Car-Buying Attitudes
+\end_layout
+
+\end_body
+\end_document
